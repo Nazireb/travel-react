@@ -1,0 +1,29 @@
+.home-c {
+  text-align: center;
+  padding: 20px;
+}
+
+.home-c h1 {
+    font-size: 1.5rem;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.home-c img {
+  width: 350px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 20px;
+}
+
+h4 {
+    font-size: 2rem;
+}

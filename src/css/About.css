@@ -1,0 +1,19 @@
+#about h1 {
+    text-align: center;
+}
+
+#about p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#about {
+    padding: 20px;
+}
+
+#about img {
+    display: block;
+    margin: 0 auto 30px;
+    width: 60%;          
+    
+}

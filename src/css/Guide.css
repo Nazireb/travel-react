@@ -1,0 +1,52 @@
+#guide {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+#guidess {
+    display: flex;
+}
+
+#guide h2 {
+  text-align: center;
+ 
+}
+
+#guide .guides img {
+  width: 60%;
+  height: 550px;
+}
+
+#guide .card {
+  width: 320px;                  
+  margin-left: 24px;
+  margin-bottom: 18px;
+}
+
+#guide .card h3 {
+  text-align: center;
+  margin: 4px 0 10px;
+}
+
+#guide .card ul {
+  margin: 0;
+  padding-left: 18px; 
+}
+
+#guide .card li {
+  margin: 6px 0;
+}
+
+
+@media screen and (max-width: 900px) {
+  #guide .card {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  #guide .guide-c {
+    margin-right: 0;
+  }
+}
