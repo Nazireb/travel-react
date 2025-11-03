@@ -7,6 +7,11 @@
 
 #guidess {
     display: flex;
+    flex-wrap: wrap;
+    gap: 40px 60px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 32px;
 }
 
 #guide h2 {
@@ -20,9 +25,12 @@
 }
 
 #guide .card {
-  width: 320px;                  
+  width: 45%;                  
   margin-left: 24px;
   margin-bottom: 18px;
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: left;
 }
 
 #guide .card h3 {

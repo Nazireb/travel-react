@@ -1,9 +1,11 @@
 import "./../css/Home.css";
 import Homep from "../components/Homep";
+import Slideshow from "../components/Slideshow";
 
 const Home = () => {
     return (
         <main id="homer" className="home-c">
+            <Slideshow />
             <div className="columns">
                 <Homep name="City" desc="Attractions, food and local vibe."/>
                 <Homep name="City" desc="Attractions, food and local vibe."/>

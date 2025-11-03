@@ -1,5 +1,6 @@
 import "./../css/About.css";
 import Aboutus from "../components/Aboutus";
+import Contact from "../components/Contact";
 
 const About = () => {
     return (
@@ -16,7 +17,9 @@ const About = () => {
                 <h1>Our Mission</h1>
                 <p>Our mission is to connect people with the world by giving them the tools they need to travel smarter. We aim to inspire confidence, encourage cultural understanding, and help travelers make lasting memories wherever they go.</p>
             </section>
+            <Contact />
         </main>
+        
     );
 };
 
