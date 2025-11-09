@@ -1,10 +1,17 @@
+h2 {
+  text-align: center;
+}
+
 .home-c {
   text-align: center;
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .home-c h1 {
     font-size: 1.5rem;
+    margin-top: 8px;
 }
 
 .columns {
@@ -13,6 +20,7 @@
   align-items: flex-start;
   gap: 24px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .home-c img {

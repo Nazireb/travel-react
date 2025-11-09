@@ -30,8 +30,11 @@ const Contact = () => {
   return (
     <div>
       <form onSubmit={onSubmit}>
+        <p>Enter name:</p>
         <input type="text" name="name" required/>
+        <p>Enter email:</p>
         <input type="email" name="email" required/>
+        <p>Enter message:</p>
         <textarea name="message" required></textarea>
 
         <button type="submit">Submit Form</button>
