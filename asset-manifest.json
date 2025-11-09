@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/travel-react/static/css/main.8e4726c3.css",
-    "main.js": "/travel-react/static/js/main.8db00af6.js",
+    "main.css": "/travel-react/static/css/main.4ca4e3dc.css",
+    "main.js": "/travel-react/static/js/main.f6f2e33c.js",
     "static/media/hometravel.jpg": "/travel-react/static/media/hometravel.4c339ae51bce9411c249.jpg",
     "static/media/Travelpage.png": "/travel-react/static/media/Travelpage.57c514dd12415922aaa0.png",
     "static/media/aboutuspage.png": "/travel-react/static/media/aboutuspage.62540c7ed0c0948b3795.png",
     "static/media/homepagepic.jpg": "/travel-react/static/media/homepagepic.3635fa1e6880c0fc3c92.jpg",
     "static/media/travel22.webp": "/travel-react/static/media/travel22.d9289e1b81017b3b9046.webp",
-    "static/media/paris.avif": "/travel-react/static/media/paris.309f28ff2506dafb4aa4.avif",
     "index.html": "/travel-react/index.html",
-    "main.8e4726c3.css.map": "/travel-react/static/css/main.8e4726c3.css.map",
-    "main.8db00af6.js.map": "/travel-react/static/js/main.8db00af6.js.map"
+    "main.4ca4e3dc.css.map": "/travel-react/static/css/main.4ca4e3dc.css.map",
+    "main.f6f2e33c.js.map": "/travel-react/static/js/main.f6f2e33c.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e4726c3.css",
-    "static/js/main.8db00af6.js"
+    "static/css/main.4ca4e3dc.css",
+    "static/js/main.f6f2e33c.js"
   ]
 }
