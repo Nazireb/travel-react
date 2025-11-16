@@ -16,7 +16,7 @@ const AddFlight = (props) => {
         const formData = new FormData(event.target);
         console.log(...formData);
         
-        const response = await fetch("http://localhost:3001/api/flights", {
+        const response = await fetch("https://server-travel-7beg.onrender.com/api/flights", {
             "method":"POST",
             "body":formData
         });
