@@ -12,7 +12,7 @@ const Home = () => {
             </div>
 
             <div className="columns">
-                <p>Trending now</p>
+                <h1>Trending now</h1>
                 <Flight num={4}/>
             </div>
 
