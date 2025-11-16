@@ -22,7 +22,7 @@ const Flight = (props) => {
 
     useEffect(()=>{
         const loadFlights= async() => {
-            const response = await axios.get("http://localhost:3001/api/flights");
+            const response = await axios.get("https://server-travel-7beg.onrender.com/api/flights");
             setFlights(response.data.slice(0,props.num));
         };
 
