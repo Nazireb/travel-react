@@ -2,7 +2,7 @@ const DetailsDialog = (props) => {
 
     return (
         <div className="columns">
-            <img src={"https://server-travel-7beg.onrender.com/api/flights"+props.img_name} alt="flight" />
+            <img src={"http://localhost:3001/images/"+props.img_name} alt="flight" />
             <div id="dialog-content">
                 <div  className="columns">
                             <h3>{props.name}</h3>

@@ -40,7 +40,7 @@ const Homep = (props) => {
 
             {showFlight?(
             <section className="travel" onClick={showTravelDetails}>
-                <img src={`https://server-travel-7beg.onrender.com/api/flights/${flight.img_name}`} alt="Flight" />
+                <img src={`http://localhost:3001/images/${flight.img_name}`} alt="Flight" />
                 <div className="travel-description">
                     <h1>{flight.name}</h1>
                 </div>
