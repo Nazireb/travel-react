@@ -33,22 +33,17 @@ const Flight = (props) => {
 
         return (
             <>
-            {showAdd && (
-                <>
                 <button id="add-flight" onClick={openAddDialog}>+</button>
-                {showAddDialog && (
-                    <AddFlight
+
+                {showAddDialog?(<AddFlight
                     closeAddDialog={closeAddDialog}
                     updateFlights={updateFlights}
-                    />
-                )}
-                </>
-            )}
+                    /> ): ("")}
         
         <div id="flight-list" className="columns">
             {flights.map((flight)=>(
                 <Homep  key={flight._id} 
-                        id={flight._id}
+                        _id={flight._id}
                         name={flight.name} 
                         country={flight.country}
                         img_name={flight.img_name}

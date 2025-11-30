@@ -41,6 +41,21 @@
   border-radius: 8px;
 }
 
+#edit-links a {
+  margin-left: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 9999;
+  position: relative;
+}
+
+#edit-links {
+  display: flex;
+  align-items: center;
+}
+
+
 @media only screen and (min-width: 600px) {
   #img-prev-section {
     flex: 1;

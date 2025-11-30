@@ -1,6 +1,22 @@
 import "./../css/Dialog.css";
+import React, { useState } from "react";
+import DetailsDialog from "./DetailsDialog";
+import EditDialog from "./EditDialog";
+import DeleteDialog from "./DeleteDialog";
 
 const TravelDialog = (props) => {
+    const [showContent, setShowContent] = useState("details");
+
+    const showEdit = (e) => {
+        e.preventDefault();
+        setShowContent("edit");
+    }
+
+    const showDelete = (e) => {
+        e.preventDefault();
+        setShowContent("delete");
+    }
+
     return (
         <div id="travel-dialog" className="w3-modal">
             <div className="w3-modal-content">
@@ -12,14 +28,30 @@ const TravelDialog = (props) => {
                     >
                         &times;
                     </span>
-                    <div className="columns">
-                        <img src={"https://server-travel-7beg.onrender.com/images/" + props.img_name} alt="Flight" />
-                        <div id="dialog-content">
-                            <h3>{props.name}</h3>
-                            <p>{props.country}</p>
-                            <p>{props.short_desc}</p>
-                            <p>{props.language}</p>
-                        </div>
+                    <div id="flight-dialog-content">
+                        {showContent==="details"?(
+                            <DetailsDialog
+                                showEdit={showEdit}
+                                showDelete={showDelete}
+                                name={props.name}
+                                country={props.country}
+                                img_name={props.img_name}/>
+                                
+                        ):showContent === "edit"?(
+                            <EditDialog
+                                _id={props._id}
+                                name={props.name}
+                                img_name={props.img_name}
+                                country={props.country}
+                                closeEditDialog={props.closeTravelDialog}
+                                updateFlight={props.updateFlight}/>
+                        ):(
+                            <DeleteDialog
+                                _id={props._id}
+                                name={props.name}
+                                closeDeleteDialog={props.closeTravelDialog}
+                                hideFlight={props.hideFlight}/>
+                        )}
                     </div>
                 </div>
             </div>
