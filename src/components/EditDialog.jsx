@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const EditDailog = (props) => {
 
     const [result, setResult] = useState("");
-    const [prevSrc, setPrevSrc] = useState("http://localhost:3001/images/" + props.img_name);
+    const [prevSrc, setPrevSrc] = useState("https://server-travel-7beg.onrender.com/api/flights" + props.img_name);
 
     const uploadImage = (event) => {
         setPrevSrc(URL.createObjectURL(event.target.files[0]));
