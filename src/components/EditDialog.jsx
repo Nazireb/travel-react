@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const EditDailog = (props) => {
 
     const [result, setResult] = useState("");
-    const [prevSrc, setPrevSrc] = useState("http://localhost:3001/images/" + props.img_name);
+    const [prevSrc, setPrevSrc] = useState("https://server-travel-7beg.onrender.com/images/" + props.img_name);
 
     const uploadImage = (event) => {
         setPrevSrc(URL.createObjectURL(event.target.files[0]));
@@ -16,7 +16,7 @@ const EditDailog = (props) => {
         const formData = new FormData(event.target);
         console.log(...formData);
 
-        const response = await fetch(`http://localhost:3001/api/flights/${props._id}`,{
+        const response = await fetch(`https://server-travel-7beg.onrender.com/api/flights/${props._id}`,{
             method:"PUT",
             body:formData
         });
